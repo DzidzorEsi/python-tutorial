@@ -1,4 +1,4 @@
-'''
+
 x = 30
 y = 20
 
@@ -15,7 +15,7 @@ print ('final values')
 print ('x = ' +str(x))
 print ('y = ' +str(y))
 
-'''
+
 
 
 a = 10
