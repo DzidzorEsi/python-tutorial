@@ -38,8 +38,9 @@ def invert_3_variables():
 
     
 #Converting from degrees Fahrenheit to degrees Kelvin
-print ('Converting from degrees Fahrenheit to degrees Kelvin...')
 '''
+print ('Converting from degrees Fahrenheit to degrees Kelvin...')
+
 (32°F − 32) × 5/9 + 273.15 = 273.15K
 1.define function (convert_to_degrees_kelvin(temp_in_fahrenheit))
 2.solve left side of the equation
@@ -57,6 +58,7 @@ def convert_to_degree_kelvin(temp_in_fahrenheit):
 
 #print ('100 degrees Fahrenheit is ' + str(converted) + ' in degrees Kelvin')
 
+#Checking for a prime number
 def is_number_prime(number):
     for i in range(2, number):
         remainder = number%i
@@ -65,12 +67,28 @@ def is_number_prime(number):
             return False
 
     return True
-'''           
+'''          
 prime_number = is_number_prime(11)
 print(prime_number)'''
 
 
+print('Testing 10 for  a perfect square')
+'''
+1. Define function with parameter(number):
+2. Create a loop with range of values (1,number)
+3. variable = divide (number) by i
+4. Set "if" condition for variable = i to return True'''
 
+def is_perfect_square(number):
+    for i in range(1,number):
+        quotient = number/i
 
+        if quotient == i:
+            return True
+        
+    return False
+
+perfect_square = is_perfect_square(10)
+print(perfect_square)
     
     
