@@ -72,7 +72,7 @@ prime_number = is_number_prime(11)
 print(prime_number)'''
 
 
-print('Testing 10 for  a perfect square')
+print('Testing 100 for  a perfect square...')
 '''
 1. Define function with parameter(number):
 2. Create a loop with range of values (1,number)
@@ -88,7 +88,7 @@ def is_perfect_square(number):
         
     return False
 
-perfect_square = is_perfect_square(10)
+perfect_square = is_perfect_square(100)
 print(perfect_square)
     
     
