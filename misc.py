@@ -71,13 +71,13 @@ def is_number_prime(number):
 prime_number = is_number_prime(11)
 print(prime_number)'''
 
-
-print('Testing 100 for  a perfect square...')
 '''
+print('Testing 100 for  a perfect square...')
+
 1. Define function with parameter(number):
 2. Create a loop with range of values (1,number)
 3. variable = divide (number) by i
-4. Set "if" condition for variable = i to return True'''
+4. Set "if" condition for variable = i to return True
 
 def is_perfect_square(number):
     for i in range(1,number):
@@ -90,5 +90,18 @@ def is_perfect_square(number):
 
 perfect_square = is_perfect_square(100)
 print(perfect_square)
-    
+'''
+
+#Using (number)**0.5
+def is_perfect_square(number):
+    sqr_rt = (number)**0.5
+
+    if sqr_rt == type(int):
+         return True
+
+    return False
+
+perfect_square = is_perfect_square(9)   
+
+
     
