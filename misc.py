@@ -140,7 +140,7 @@ def is_palindrome(string):
         print('Invalid input, try something else')
 
         return
-    
+    string = string.replace(' ','')
     reversed_str = string[::-1]
 
     if reversed_str == (string):
@@ -154,7 +154,7 @@ _reversed = is_palindrome('able was i ere i saw elba')
 print(_reversed)
 _reversed = is_palindrome('nurses run')
 print(_reversed)
-_reversed = is_palindrome('Was it a cat I saw')
+_reversed = is_palindrome('was it a cat i saw')
 print(_reversed)
 _reversed = is_palindrome(1881)
 print(_reversed)
