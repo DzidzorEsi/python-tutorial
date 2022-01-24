@@ -141,9 +141,7 @@ def is_palindrome(string):
 
         return
     
-    reversed_str = ''
-    for i in range(len(string), 0, -1):
-        reversed_str = reversed_str + string[i-1]
+    reversed_str = string[::-1]
 
     if reversed_str == (string):
         return True
