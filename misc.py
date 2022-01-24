@@ -136,16 +136,19 @@ def reverse_string_return(string):
 
 
 def is_palindrome(string):
+    if type(string)!= str:
+        print('Invalid input, try something else')
+
+        return
+    
     reversed_str = ''
     for i in range(len(string), 0, -1):
-
         reversed_str = reversed_str + string[i-1]
 
-    if reversed_str == str(string):
-
+    if reversed_str == (string):
         return True
     else:
-        print('Invalid input, try something else')
+        return False
 
 _reversed = is_palindrome('madam')
 print(_reversed)
