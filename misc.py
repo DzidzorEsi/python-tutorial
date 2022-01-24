@@ -122,6 +122,47 @@ def reverse_string_return(string):
 
 
 #reverse_string('motivation')
-_reversed = reverse_string_return('characters')
+#_reversed = reverse_string_return('characters')
+#print(_reversed)
+
+'''
+1.define the function is_palindrome
+2.create variable to store characters from iterations
+3.write loop using len of argument as start and -1 as step
+4.store iterations in variable
+5.return true if palindrome
+6.return false in not
+7.add condition for accepting only string '''
+
+
+def is_palindrome(string):
+    reversed_str = ''
+    for i in range(len(string), 0, -1):
+
+        reversed_str = reversed_str + string[i-1]
+
+    if reversed_str == str(string):
+
+        return True
+    else:
+        print('Invalid input, try something else')
+
+_reversed = is_palindrome('madam')
 print(_reversed)
+_reversed = is_palindrome('able was i ere i saw elba')
+print(_reversed)
+_reversed = is_palindrome('nurses run')
+print(_reversed)
+_reversed = is_palindrome('Was it a cat I saw')
+print(_reversed)
+_reversed = is_palindrome(1881)
+print(_reversed)
+
+                    
+
+    
+
+        
+
+        
     
