@@ -101,7 +101,27 @@ def is_perfect_square(number):
 
     return False
 
-perfect_square = is_perfect_square(9)   
+#perfect_square = is_perfect_square(9)   
 
 
+
+
+def reverse_string(string):
+    for i in range(len(string), 0, -1):
+        print(string[i-1], end='')
+        
+    print()
+
+def reverse_string_return(string):
+    reversed_string = ''
+    for i in range(len(string), 0, -1): 
+
+        reversed_string = reversed_string + string[i-1]
+
+    return reversed_string
+
+
+#reverse_string('motivation')
+_reversed = reverse_string_return('characters')
+print(_reversed)
     
