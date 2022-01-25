@@ -36,8 +36,6 @@ def invert_3_variables():
     print ('b = ' +str(b))
     print ('c = ' +str(c))
 
-    
-#Converting from degrees Fahrenheit to degrees Kelvin
 '''
 print ('Converting from degrees Fahrenheit to degrees Kelvin...')
 
@@ -56,9 +54,7 @@ def convert_to_degree_kelvin(temp_in_fahrenheit):
     return degree_in_kelvin
 
 
-#print ('100 degrees Fahrenheit is ' + str(converted) + ' in degrees Kelvin')
 
-#Checking for a prime number
 def is_number_prime(number):
     for i in range(2, number):
         remainder = number%i
@@ -92,7 +88,6 @@ perfect_square = is_perfect_square(100)
 print(perfect_square)
 '''
 
-#Using (number)**0.5
 def is_perfect_square(number):
     sqr_rt = (number)**0.5
 
@@ -100,10 +95,6 @@ def is_perfect_square(number):
          return True
 
     return False
-
-#perfect_square = is_perfect_square(9)   
-
-
 
 
 def reverse_string(string):
