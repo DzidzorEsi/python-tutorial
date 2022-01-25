@@ -150,11 +150,5 @@ print(_reversed)
 _reversed = is_palindrome(1881)
 print(_reversed)
 
-                    
 
-    
-
-        
-
-        
-    
+# Hello world comment
