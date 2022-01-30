@@ -1,4 +1,3 @@
-'''
 def invert_2_variables():
     x = 30
     y = 20
@@ -140,6 +139,7 @@ def is_palindrome(string):
     else:
         return False
 
+'''
 _reversed = is_palindrome('madam')
 print(_reversed)
 _reversed = is_palindrome('able was i ere i saw elba')
@@ -149,8 +149,10 @@ print(_reversed)
 _reversed = is_palindrome('was it a cat i saw')
 print(_reversed)
 _reversed = is_palindrome(1881)
-print(_reversed)
-'''
 
-# Hello world comment
+print(_reversed)'''
+
+
+
+
 
