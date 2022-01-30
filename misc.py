@@ -163,26 +163,9 @@ print(_reversed)'''
 #4.loop step 3 to get all other digits
 #5.get sum of each digit raised to the exponent found in step 2 & assign varaible = _sum
 #6.return the variable _sum
-#7.write if condition to compare the variable sum to intinial parameter
+#7.write if condition to compare the variable _sum to intinial parameter
 
-def is_armstrong_number(num):
-    expo = len(str(num))
-    _sum = 0 
-    
-    while(True):
-        remainder = num %10
-        num = (num - remainder)/10
-        _sum += (remainder**expo)
-        
-        return _sum
-    if _sum == 153:
-        print ("it is an armstrong number")
 
-    else:
-        print ("it is not an armstrong number")
-
-armstrong = is_armstrong_number(153)
-print(armstrong)
     
     
 
