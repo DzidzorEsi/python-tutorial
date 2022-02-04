@@ -1,4 +1,4 @@
-
+import random as rand
 
 
 # We are going to generate a random number
@@ -10,11 +10,12 @@
 # * greet the user and welcome them to the program
 # * Display the rules of the games
 # * Prompt the user to guess a number (requires input)
-# * check if the provided input is a valid number
+# ** check if the provided input is a valid number
 # * check if the provided number is within range
-# * Generate a random number
+# * Generate a random number and assign to variable
 # * compare the generated number with the user's guess
-# * Display whether the number was guessed correctly
+# * Display whether the number was guessed correctly or not
+# * Display the actual number if guess is wrong
 
 
 def is_guess_right():
@@ -26,10 +27,21 @@ def is_guess_right():
     guess = int(guess)
     
     if guess >= 1 and guess <= 10:
-        #TODO generate and random number and check if it's sames as the guess
+        random_number = rand.randint(1, 10)
+        if random_number == guess:
+            return True
+        else:
+            print('The correct number is ' + str(random_number))
+            return False
     else:
         return False
 
-        
-    
+
+while(True):
+    is_guess_correct = is_guess_right()
+    if is_guess_correct:
+        print('Great! You guessed correctly')
+        print('You are a terrific guesser')
+    else:
+        print('Sorry better luck next time.' )
     
