@@ -39,10 +39,25 @@ def is_armstrong_number(num):
     else:
         return False
     
-
-
     
-        
+def count_armstrong_numbers(_list):
+    count = (0)
+    for i in (_list):
+        is_armstrong_number(i)
+
+    if is_armstrong_number(i) == True:
+        count += 1
+    else:
+        pass
+
+    return count
+
+my_list = ([153, 834, 1634, 92331, 111, 0])
+number_count = count_armstrong_numbers(my_list)
+print(number_count)
+
+                
+                
     
 
 
