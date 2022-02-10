@@ -1,11 +1,54 @@
 
-#1.define function: is_armstrong_number(num)
-#2.get value of exponent & store in variable = expo
-# i. convert num to string & find len(num)
-#3.get digit in (num)
-# i.find(num)%10 & store in variable = remainder
-# ii.subtract remainder from (num) & divide by 10
-#4.loop step 3 to get all other digits
-#5.get sum of each digit raised to the exponent found in step 2 & assign varaible = _sum
-#6.return the variable _sum
-#7.write if condition to compare the variable _sum to intinial parameter
+#Steps to find armstrong number
+#*.define the function: is_armstrong_number(num)
+#*.convert num to string & store in variable called num_str
+#*.get length of num_str & store in variable called exponent
+#*create variable called _sum and assign it to 0
+#*.write for loop for range in of (0, exponent)
+#*get the i-th digit of num_str
+#*convert i-th digit to int
+#*get the product of the i-th digit and **exponent and store in variable product
+#*add product to variable _sum
+#*.write if condition to compare the value of _sum to num
+#*.if sum == num, return True
+#*.if sum!= num, return False
+
+#Steps to count the number of armstrong numbers:
+#*define function count_armstrong_numbers(list):
+#*create a variable, called count and assign to 0
+#*write a loop for the list
+#*run each iteration through the is_armstrong_number function
+#*write if condition to add count 1 for when armstrong function returns True
+#write else condition for nothing to be done when function returns false
+#*return value of count variable
+#*print statement showing the total number of armstrong numbers
+
+
+def is_armstrong_number(num):
+    num_str = str(num)
+    exponent = len(num_str)
+    _sum = (0)
+
+    for i in range (exponent):
+        digit = int(num_str[i])
+        product = digit **exponent
+        _sum += product
+
+    if _sum == num:
+        return True
+    else:
+        return False
+    
+
+
+    
+        
+    
+
+
+
+
+
+
+        
+        
