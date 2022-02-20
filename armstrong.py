@@ -15,7 +15,7 @@
 
 #Steps to count the number of armstrong numbers:
 #*define function count_armstrong_numbers(list):
-#*Set a restriction for input that is not a list and return#*Set a rstriction for the number 0 in the list
+#*Set a restriction for input that is not a list and return
 #*create a variable, called count and assign to 0
 #*write a loop for the list
 #*run each iteration through the is_armstrong_number function
@@ -34,7 +34,7 @@ def is_armstrong_number(num):
     
     num_str = str(num)
     exponent = len(num_str)
-    _sum = (0)
+    _sum = 0
 
     for i in range (exponent):
         digit = int(num_str[i])
